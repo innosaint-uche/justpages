@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinkedIn Post Mockup</title>
+    <title>LinkedIn Post Mockup with Animated Banner</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f2ef;
+            /* background-color: #f3f2ef; */ /* Removed background color */
         }
         .linkedin-card {
-            background-color: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
+            /* background-color: #ffffff; */
+            /* border: 1px solid #e0e0e0; */
+            /* border-radius: 8px; */
         }
         .linkedin-text {
             color: rgba(0, 0, 0, 0.9);
@@ -43,13 +43,12 @@
         }
     </style>
 </head>
-<body class="p-4 sm:p-8 flex items-center justify-center min-h-screen">
-
+<body>
     <div class="linkedin-card max-w-2xl w-full overflow-hidden">
         <div class="p-4">
             <!-- Post Header -->
             <div class="flex items-start">
-                <img src="https://placehold.co/48x48/002347/FFFFFF?text=IA" alt="Ijeoma Nwankwo" class="rounded-full mr-3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYfemYhNcpf8Hn2K5SGzQeuKv33xHp33TDUA&s" alt="Ijeoma Nwankwo" class="rounded-full mr-3 h-12 w-12 object-cover">
                 <div class="flex-1">
                     <p class="font-semibold text-sm text-gray-900">Ijeoma Nwankwo</p>
                     <p class="text-xs text-gray-500">Head of Digital Assets & Innovation at FBNQuest</p>
@@ -64,13 +63,7 @@
             <div class="mt-4 linkedin-text text-sm">
                 <p class="font-semibold">The ISA 2025 Act isn't just regulation; it's a starting gun for the next wave of wealth creation.</p>
                 <p class="mt-2">The recent clarification of digital assets as securities under the ISA 2025 is the single most important shift for Nigerian wealth management this decade. For years, institutional and private investors have been on the sidelines, citing regulatory uncertainty. That era is over.</p>
-                <p class="mt-2">The question is no longer *if* you should have a digital asset strategy, but *how* you navigate this new terrain to your advantage. We're guiding our clients through three key areas:</p>
-                <ul class="list-disc list-inside mt-2 space-y-1">
-                    <li><strong>Portfolio Integration:</strong> Moving beyond speculation to strategically allocating SEC-approved digital assets for long-term growth.</li>
-                    <li><strong>Asset Tokenization:</strong> Unlocking liquidity in traditionally illiquid assets like real estate.</li>
-                    <li><strong>Risk Navigation:</strong> Implementing institutional-grade security and compliance frameworks.</li>
-                </ul>
-                <p class="mt-2">The future isn't coming; it's here. Let's navigate it together.</p>
+                <p class="mt-2">The question is no longer *if* you should have a digital asset strategy, but *how* you navigate this new terrain to your advantage.</p>
                 <p class="mt-4">
                     <a href="#" class="linkedin-hashtag">#NavigateWhatsNext</a>
                     <a href="#" class="linkedin-hashtag">#FBNQuest</a>
@@ -81,10 +74,60 @@
             </div>
         </div>
 
-        <!-- Post Image -->
-        <div>
-            <!-- Image Placeholder: Replace with a relevant, high-quality image URL -->
-            <img src="https://placehold.co/800x450/002347/B4882F?text=Navigating+the+Digital+Asset+Frontier" alt="Digital Asset Navigation Concept" class="w-full h-auto">
+        <!-- EMBEDDED SVG BANNER -->
+        <div class="w-full h-auto">
+            <svg width="100%" viewBox="0 0 1280 720" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: block;">
+                <defs>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700;800&display=swap');
+                        .font-playfair { font-family: 'Playfair Display', serif; }
+                        .font-inter { font-family: 'Inter', sans-serif; }
+                    </style>
+                </defs>
+                <rect width="1280" height="720" fill="#FFFEF7" />
+                <g opacity="0.2" stroke="#002347" stroke-width="0.5">
+                    <path d="M 100 0 V 720 M 200 0 V 720 M 300 0 V 720 M 400 0 V 720 M 500 0 V 720 M 600 0 V 720 M 700 0 V 720 M 800 0 V 720 M 900 0 V 720 M 1000 0 V 720 M 1100 0 V 720 M 1200 0 V 720" />
+                    <path d="M 0 100 H 1280 M 0 200 H 1280 M 0 300 H 1280 M 0 400 H 1280 M 0 500 H 1280 M 0 600 H 1280" />
+                </g>
+                <g opacity="0.4">
+                    <path d="M -20 360 C 300 100, 800 620, 1300 360" stroke="#B4882F" stroke-width="2" fill="none" stroke-linecap="round" stroke-dasharray="2000" stroke-dashoffset="2000">
+                         <animate attributeName="stroke-dashoffset" from="2000" to="0" dur="4s" begin="1s" fill="freeze" />
+                    </path>
+                     <path d="M -20 500 C 400 200, 900 800, 1300 450" stroke="#002347" stroke-width="1" fill="none" stroke-linecap="round" stroke-dasharray="5 10" >
+                          <animate attributeName="stroke-dashoffset" from="100" to="0" dur="20s" repeatCount="indefinite" />
+                     </path>
+                </g>
+                <image xlink:href="https://fbnquest.com/wp-content/uploads/2021/05/FBN-Quest-Merchant-Bank.svg" x="60" y="60" height="40" />
+                <g class="font-playfair" font-weight="700" text-anchor="middle">
+                    <text x="640" y="350" font-size="64" fill="#002347" opacity="0">
+                        Navigating the New Frontier
+                        <animateTransform attributeName="transform" type="translate" from="0 20" to="0 0" dur="0.8s" begin="1.5s" fill="freeze" />
+                        <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.5s" fill="freeze" />
+                    </text>
+                    <text x="640" y="410" font-size="56" fill="#B4882F" opacity="0">
+                        of Digital Assets
+                         <animateTransform attributeName="transform" type="translate" from="0 20" to="0 0" dur="0.8s" begin="1.8s" fill="freeze" />
+                         <animate attributeName="opacity" from="0" to="1" dur="0.8s" begin="1.8s" fill="freeze" />
+                    </text>
+                </g>
+                <g transform="translate(1180, 100)" opacity="0.6">
+                    <circle cx="0" cy="0" r="60" stroke="#002347" stroke-width="1" fill="none" opacity="0.5"/>
+                    <g stroke="#002347" stroke-width="1.5">
+                        <path d="M 0 -60 L 0 60" />
+                        <path d="M -60 0 L 60 0" />
+                        <g transform="rotate(45)">
+                             <path d="M 0 -50 L 0 50" stroke-width="1" />
+                             <path d="M -50 0 L 50 0" stroke-width="1" />
+                        </g>
+                    </g>
+                    <path d="M 0 -60 L -6 -48 L 6 -48 Z" fill="#B4882F" stroke="none" />
+                    <g>
+                         <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="15s" repeatCount="indefinite" />
+                         <path d="M 0 0 L 0 -50" stroke="#B4882F" stroke-width="2.5" stroke-linecap="round"/>
+                         <path d="M 0 0 L 0 12" stroke="#002347" stroke-width="2.5" stroke-linecap="round"/>
+                    </g>
+                </g>
+            </svg>
         </div>
 
         <!-- Engagement Stats -->
@@ -100,24 +143,11 @@
         <!-- Action Bar -->
         <div class="border-t border-gray-200 mx-4"></div>
         <div class="flex justify-around p-1">
-            <button class="action-button">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M9 8.5H7.5v5.5H9" /></svg>
-                <span>Like</span>
-            </button>
-            <button class="action-button">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>
-                <span>Comment</span>
-            </button>
-            <button class="action-button">
-                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" /></svg>
-                <span>Repost</span>
-            </button>
-            <button class="action-button">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg>
-                <span>Send</span>
-            </button>
+            <button class="action-button"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M9 8.5H7.5v5.5H9" /></svg><span>Like</span></button>
+            <button class="action-button"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg><span>Comment</span></button>
+            <button class="action-button"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" /></svg><span>Repost</span></button>
+            <button class="action-button"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" /></svg><span>Send</span></button>
         </div>
     </div>
-
 </body>
 </html>
